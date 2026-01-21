@@ -1,3 +1,7 @@
+on:
+  push:
+    branches:
+      - main
 git add .github/workflows/newman-test.yml
 git commit -m "Add GitHub Actions workflow to run Newman"
 git push origin main
