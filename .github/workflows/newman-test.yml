@@ -1,0 +1,12 @@
+- name: Run newman-test with HTML report
+  run: |
+    npm install -g newman newman-reporter-htmlextra
+    newman run collection.json \
+      -r htmlextra \
+      --reporter-htmlextra-export newman-test-report.html
+
+- name: Upload Newman-test Report
+  uses: actions/upload-artifact@v4
+  with:
+    name: newman-test-report
+    path: newman-test-report.html

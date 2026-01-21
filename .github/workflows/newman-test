@@ -1,8 +1,0 @@
-on:
-  push:
-    branches:
-      - gabriel
-
-git add .github/workflows/newman-test
-git commit -m "Add GitHub Actions workflow to run newman-test"
-git push origin main
