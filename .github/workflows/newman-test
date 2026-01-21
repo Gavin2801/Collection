@@ -3,6 +3,6 @@ on:
     branches:
       - gabriel
 
-git add .github/workflows/newman-test.yml
+git add .github/workflows/newman-test
 git commit -m "Add GitHub Actions workflow to run Newman"
 git push origin main
